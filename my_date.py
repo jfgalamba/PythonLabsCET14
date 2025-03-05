@@ -128,5 +128,18 @@ def test():
     print(f'{dt1} - {dt4} = {dt1 - dt4}')    # -5 
 
     print(f'Today is {Date.today()!r}')
+
+    invalid_dates = (
+        '2024-13-11', 
+        '2024-04-31', 
+        '2025-02-29', 
+        '2025-07-32',
+        '1890-02-15',
+    )
+    for invalid_date in invalid_dates:
+        try:
+            Date.from_iso(invalid_date)
+        except InvalidDateValues:
+            print(f"Data {invalid_date} inválida")
 #:
 
