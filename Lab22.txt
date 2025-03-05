@@ -1,0 +1,132 @@
+2.1 (20, 10, 1, 30, 5).index(1) => 2
+
+
+    (20, 10, 1, 30, 5).index(30) => 3
+    (20, 10, 1, 30, 5).index(20) => 0
+    (20, 10, 1, 30, 5).index(2000) => Erro
+
+2.4 '+'.join('a_l_b_e_r_t_o'.split('_'))
+    '+'.join(['a', 'l', 'b', ...])
+    'a+l+b+e+r+t+o'
+
+    'a_l_b_e_r_t_o'.split('_') => ['a', 'l', 'b', ...]
+
+3. vals = [12, 13, 14, 15, 16]
+3.2 vals[2:] => [14, 15, 16]
+3.4 vals[-len(vals) + 1] 
+    vals[-5 + 1]
+    vals[-4] => 13
+
+4.
+
+import pow from math
+input("Valor da base     : ") = base
+input("Valor do expoente : ") = exp
+_resultado = pow base, exp
+print("Resultado":, _resultado)
+
+---------------------------------------------
+
+from math import pow
+base = float(input("Valor da base     : "))
+exp = float(input("Valor do expoente : "))
+_resultado = pow(base, exp)
+print("Resultado:", _resultado)
+
+7.
+d)
+codigo = {'A': 19, 'B': 20}
+print(list(codigo))
+------------------------
+['A', 'B']
+
+e)
+codigo = {'A': 19, 'B': 20}
+print(codigo['B'], codigo.get('C'), codigo.get('C', 21))
+-------------------------
+20 None 21
+
+g)
+processos = {'ls': 192->292, 'grep': 321, 'init': 1, 'mkfs': 19}
+print('ls' in processos, 321 in processos)
+print((192 in processos)*2)
+processos.update(ls=292, mkfs=19)
+print(list(processos.items()))
+-------------------------------------
+True False
+0
+[('ls', 292), ('grep', 321), ('init', 1), ('mkfs', 19)]
+
+
+ 
+9.
+
+i = int(input("Valor de i: "))
+if i == 10:
+    print("Preparar operação")
+elif i == 5:
+    print("Começar operação")
+elif i == 0:
+    print("Missão crítica")
+else:
+    print("Operação abortada")
+
+-------
+
+i = int(input("Valor de i: "))
+match i:
+    case 10:
+        print("Preparar operação")
+    case 5: 
+        print("Começar operação")
+    case 0:
+        print("Missão crítica")
+    case _:
+        print("Operação abortada")
+
+==================================================================
+
+nome = input("Nome? ")
+match nome:
+    case 'Alberto' | 'Armando':
+        print("Bom rapaz")
+    case 'Arnaldo' | 'Augusto':
+        print("Gente estranha...")
+    case _:
+        print("Desconheço...")
+
+--------------------------------------------------------
+
+nome = input("Nome? ")
+if nome in ('Alberto', 'Armando'):    # nome == 'Alberto' or nome == 'Armando':
+    print("Bom rapaz")
+elif nome in ('Arnaldo', 'Augusto'):
+    print("Gente estranha...")
+else:
+    print("Desconheço...")
+
+==================================================================
+
+nums = ... # deve ser um tuplo com três valores 
+           # mas pode haver um erro...
+
+if not isinstance(nums, tuple) or len(nums) != 3:
+    print("Conjunto inválido")
+elif nums[0] == 10:
+    print(nums[1] + nums[2])
+elif nums[0] == 1:
+    print(nums[1] * nums[2])
+else:
+    print("Conjunto inválido")
+
+-----------------------------------------------
+
+nums = ...
+
+match nums:
+    case (10, x, y):
+        print(x + y)
+    case (1, x, y):
+        print(x * y)
+    case_:
+        print("Conjunto inválido")
