@@ -1,0 +1,45 @@
+================================================================================
+Referências Qt:
+================================================================================
+
+[1] - Which Python GUI library should you use?
+      Comparing the Python GUI libraries available in 2025
+
+        https://www.pythonguis.com/faq/which-python-gui-library/
+
+[2] - Want to create GUI applications with Python? Here is everything 
+      you need to go from your first window to complete apps
+
+        https://www.pythonguis.com/
+
+[3] - Creating your first app with PySide6: A simple Hello World!
+      application with Python and Qt
+
+        https://www.pythonguis.com/tutorials/pyside6-creating-your-first-window/
+
+[4] - Python and PyQt: Building a GUI Desktop Calculator
+
+        https://realpython.com/python-pyqt-gui-calculator/
+        https://realpython.com/courses/build-gui-calculator-pyqt/
+
+[5] - Qt Designer and Python: Build Your GUI Applications Faster
+
+        https://realpython.com/qt-designer-python/
+
+[6] - Build a Bulk File Rename Tool With Python and PyQt
+
+        https://realpython.com/bulk-file-rename-tool-python/
+
+================================================================================
+Referências Git + GitHub:
+================================================================================
+
+[1] - Git Tutorial for Beginners: Learn Git in 1 Hour - YouTube
+
+        https://www.youtube.com/watch?v=8JJ101D3knE
+
+[2] - CS50W - Lecture 1 - Git (Brian Yu)
+
+        https://www.youtube.com/watch?v=NcoBAfJ6l2Q
+        https://cs50.harvard.edu/web/2020/weeks/1/
+
